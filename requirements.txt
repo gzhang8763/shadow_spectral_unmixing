@@ -1,0 +1,9 @@
+# platform: win-64
+
+python
+numpy
+scipy
+pandas
+matplotlib
+jupyter
+spyder
