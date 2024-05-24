@@ -13,14 +13,11 @@ Given input image Y and endmember library E, the optimization algorithm S3AM sol
     2) Sum-To-One sum( X(:,i)) = 1, for i=1,...,N
     3) Q, K >=0 and <= 1 for i=1,...,N
 
-    (~E) is computed by endmemebrs E
+    (~E) is computed by endmemebrs E, shadow fraction Q, and nonlinearity K.
 
-    W is a sparse matrix to compute difference between a target pixel and
-    its neighnoring pixels in the four canonical directions, weighted by
-    R. R is weight matricies
+    W1 is a sparse matrix to compute difference between a target pixel and its neighnoring pixels in the four canonical directions, weighted by R. R is weight matricies
 
-    W2 is a sparse matrix to compute difference between a target pixel and
-    its neighnoring pixels in the four canonical directions, not weighted
+    W2 is a sparse matrix to compute difference between a target pixel and its neighnoring pixels in the four canonical directions, not weighted.
     
-    lambda_tv is the regularization parameter
+    lambda_tv is the regularization parameter.
     
